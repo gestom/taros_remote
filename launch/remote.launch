@@ -1,0 +1,9 @@
+<launch>
+	<!--<node pkg="rosserial_python" type="serial_node.py" name="remote" args="/dev/remote_control">
+		<remap from="/joy" to="/remote" />
+	</node>-->
+
+	<node pkg="remote_control" type="testcode" name="testcode" respawn="true">
+		<remap from="/joy" to="/remote" />
+	</node>
+</launch>
